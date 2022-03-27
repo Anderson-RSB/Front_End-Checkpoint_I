@@ -30,15 +30,12 @@ body {
     flex-wrap: wrap;
     min-height: 130px;
     width: 100vw;
-    background-color: darkorange;
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 0px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: none;
     position: fixed;
     top: 0;
-    left: 0;
 }
 
 .logo {
@@ -46,7 +43,7 @@ body {
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 28px;
 }
 
 .logo img {
@@ -54,9 +51,8 @@ body {
     width: 120px;
 }
 
-.titulo {
+.logo h1 {
     border: none;
-    box-sizing: border-box;
     border-radius: 44px;
     padding: 16px;
     background: rgb(247, 146, 38);
@@ -77,7 +73,6 @@ body {
     align-items: center;
     flex-wrap: wrap;
     border: none;
-    box-sizing: border-box;
     border-radius: 44px;
     padding: 16px;
     background: rgb(247, 146, 38);
@@ -102,11 +97,6 @@ body {
 }
 
 .banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    max-height: 532px;
     min-height: 532px;
     width: 100vw;
     background-image: url("../IMG/iLoveCampinas.jpeg");    
@@ -129,7 +119,6 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
-    text-align: center;
     color: black;
     margin-bottom: 32px;
 }
@@ -137,17 +126,15 @@ body {
 .cards {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
     min-height: 534px;
-    width: 100vw;
+    width: 90vw;
 }
 
 .card1,
 .card2,
 .card3 {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     height: 534px;
@@ -178,10 +165,6 @@ body {
 }
 
 .cards p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
     margin-top: 16px;
     background: rgb(247, 146, 38);
     border: 1px solid black;
@@ -205,10 +188,9 @@ body {
 .sectionCuriosidades {
     display: flex;
     flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
     text-align: justify;
-    text-indent: 20px;
+    width: 85vw;
 }
 
 .curiosidades {
@@ -216,8 +198,7 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 16px;
-    padding: 16px;
+    margin-top: 24px;
     gap: 16px;
 }
 
@@ -236,21 +217,18 @@ body {
     flex-wrap: wrap;
 }
 
-.curiosidades strong {
+.curiosidade1 strong {
     display: flex;
     flex-wrap: wrap;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 30px;
     text-align: center;
     color: black;
 }
 
 .curiosidades p {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -281,21 +259,21 @@ body {
     width: 1034px;
 }
 
+/* Configurações do Rodapé */
 .rodape {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
     min-height: 414px;
+    width: 100vw;
     margin-top: 44px;
     background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow: 0 0px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: none;
 }
 
-/* Configurações do Rodapé */
 .rodape h1 {
     font-family: 'Oswald', sans-serif;
     font-style: normal;
@@ -341,7 +319,6 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    text-decoration: none;
 }
 
 .gitHub img {
@@ -399,19 +376,13 @@ body {
     body {
         height: auto;
         width: 100vw;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
     }
     
     .cabecalho {
-        padding: 0;
         gap: 4px;
     }
 
     .logo{
-        padding: 0;
         gap: 0;
     }
 
@@ -425,24 +396,23 @@ body {
     }
 
     .sectionPrincipal h1 {
-        width: 85vw;
+        text-align: center;
     }
 
     .cards {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 95vw;
+        width: 85vw;
         gap: 4px;
     }
 
-    .sectionCuriosidades {
-        width: 90vw;
+    .sectionCuriosidades p {
+        width: 80vw;
+        padding: 0;
+        gap: 0;
     }
 
     .curiosidades {
-        width: 90vw;
+        padding: 0;
+        gap: 0;
     }
 
     .sectionVideo {
